@@ -14,11 +14,11 @@ def solve(n,listt):
                 return "NO"
             if left==i:
                 t_left=left-1
-                if t_left<left and left!=1:
+                if t_left>=1:
                     left=t_left
             elif right==i:
                 t_right=right+1
-                if t_right>right and right!=n:
+                if t_right<=n:
                     right=t_right
 
 
